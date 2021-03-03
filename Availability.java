@@ -52,19 +52,19 @@ public class Availability {
             System.out.println("choose availability : 95%, 99.5%, 99.99%, 99.995%, 99.999%");
             String input = scanner.nextLine();
             if(input.equals("95%")) result = (minsDay * 0.5)/100;
-            if(input.equals("99%")) result = (minsDay * 0.1)/100;
+            if(input.equals("99.5%")) result = (minsDay * 0.1)/100;
             if(input.equals("99.99%")) result = (minsDay * 0.01)/100;
             if(input.equals("99.995%")) result = (minsDay * 0.005)/100;
-            if(input.equals("95%")) result = (minsDay * 0.001)/100;
+            if(input.equals("99.999%")) result = (minsDay * 0.001)/100;
             System.out.println("minutes per day downtime if availability is " + input + " = " + result );
         }else if(userinput.equals("hour")){
             System.out.println("choose availability : 95%, 99.5%, 99.99%, 99.995%, 99.999%");
             String input = scanner.nextLine();
             if(input.equals("95%")) result = (minsHr * 0.5)/100;
-            if(input.equals("99%")) result = (minsHr * 0.1)/100;
+            if(input.equals("99.5%")) result = (minsHr * 0.1)/100;
             if(input.equals("99.99%")) result = (minsHr * 0.01)/100;
             if(input.equals("99.995%")) result = (minsHr * 0.005)/100;
-            if(input.equals("95%")) result = (minsHr * 0.001)/100;
+            if(input.equals("99.999%")) result = (minsHr * 0.001)/100;
             System.out.println("minutes per day downtime if availability is " + input + " = " + result );
         }
 
